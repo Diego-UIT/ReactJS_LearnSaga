@@ -1,0 +1,14 @@
+npm install redux-saga
+npm install react-redux
+npm install react-icons --save
+student.reducer: 
+xử lí các state trên giao diện 1 cách trực tiếp, nên khi thêm xóa sửa, mình nhìn thấy sự thay đổi
+student.saga: 
+khi nhận thấy các hành động thêm xóa sửa, hàm saga được tự động gọi ngay sau đó, nó sẽ xử lí liên quan tới API trên server
+
+*Tạo server
+cd server
+npm init -y
+npm install express mongoose nodemon --save
+npm install --save redux-actions
+npm install --save react-swal

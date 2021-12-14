@@ -1,0 +1,93 @@
+GET http://localhost:3000/api/product/
+
+###
+POST http://localhost:3000/api/product/
+Content-Type: application/json
+
+{
+    "name": "Sweet Candy",
+    "price": 30000,
+    "unit": "pack",
+    "info": "Beautiful product, Luxury"
+}
+
+###
+PUT http://localhost:3000/api/product/618015441407a96ac3e350d4
+Content-Type: application/json
+
+{
+    "name": "Potato Snack",
+    "price": 40000,
+    "unit": "pack",
+    "info": "Beautiful product, Luxury"
+}
+
+### 
+DELETE  http://localhost:3000/api/product/618287389ccabc24ce600be6
+
+# ===== USER ===== #
+###
+GET http://localhost:3000/api/user/
+
+###
+GET http://localhost:3000/api/user/auth
+
+### 
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+    "username": "mchuong0",
+    "password": "123"
+}
+
+### 
+PUT http://localhost:3000/api/user/619a51044255c335e6f97710
+Content-Type: application/json
+
+{
+    "username": "tanan",
+    "password": "123"
+}
+
+### 
+DELETE  http://localhost:3000/api/user/619cd06e5be8b2108b846466
+
+###
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+    "username": "mchuong0",
+    "password": "123"
+}
+
+# ===== CART ===== #
+###
+GET http://localhost:3000/api/cart/619cd06e5be8b2108b846466
+
+###
+POST http://localhost:3000/api/cart/
+Content-Type: application/json
+
+{
+    "userId": "619cd06e5be8b2108b846466",
+    "cart": {
+        "name": "Potato Snack",
+        "price": 40000,
+        "unit": "pack",
+        "info": "Beautiful product, Luxury"
+    }
+}
+###
+PUT http://localhost:3000/api/cart/619cd06e5be8b2108b846466
+Content-Type: application/json
+
+{
+    "cart": {
+        "name": "Potato Snack",
+        "price": 40000,
+        "unit": "pack",
+        "info": "Beautiful product, Luxury"
+    }
+}
