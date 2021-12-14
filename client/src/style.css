@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(240, 235, 235);
+}
+
+.studentList {
+    width: 50%;
+    min-height: 80vh;
+    max-height: 80vh;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.student input[type='text'] {
+    width: 90%;
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    color: #0d6efd;
+}
+
+.student input[type='text']:focus {
+    outline: none;
+}
+
+.btnRemove {
+    color: rgb(226, 40, 40);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.itemStudent {
+    margin-left: 5px;
+}
+
+.card {
+    text-align: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+.control {
+    font-size: 22px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #BADA55;
+}
+
+.iconDelete {
+    margin-right: 45px;
+    border: 1px solid #BADA55;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.iconDelete:hover {
+    background: #BADA55;
+    color: #fff;
+}
+
+.iconEdit {
+    background: #fff;
+    border: 1px solid #BADA55;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.iconEdit:hover {
+    background: #BADA55;
+    color: #fff;
+}
+
+.price {
+    font-size: 18px;
+    color: #BADA55;
+}
+
+.canhTac {
+    color:rgb(180, 174, 174)
+}
+
+.admin {
+    display: flex;
+}
+.admin .sidebar {
+    flex: 1;
+    background: grey;
+    height: 100vh;
+    color: rgb(240, 234, 234);
+}
+.admin .sidebar h3 {
+   margin: 10px 10px 10px 10px;
+}
+.closeSidebar {
+    float: right;
+    font-size: 28px;
+    
+}
+
+.bar-home {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    
+}
+.bar-home a {
+    color:rgb(240, 235, 235);
+}
+
+.admin .main-data {
+    flex: 4;
+}
+
+.bars-icon {
+    color:rgb(240, 235, 235);
+    margin-left: 20px;
+    font-size:18px;
+}
+
+.sideBarNone {
+    display: none !important;
+}
+
+.sideBarMin {
+    display: none;
+}
+
+.cartIcon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.numberCart {
+    color: #fff;
+}
+
+.btn-qty {
+    width: 40px;
+}
